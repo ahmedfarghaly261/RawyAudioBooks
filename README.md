@@ -1,4 +1,5 @@
 🎧 RawyAudioBooks
+
 RawyAudioBooks is a responsive and modern web application for streaming audiobooks and podcasts, built with React, Vite, and Tailwind CSS. It offers a sleek user experience and supports content in both Arabic and English, making it accessible and engaging for a wide audience.
 
 🚀 Features
@@ -23,44 +24,28 @@ RawyAudioBooks is a responsive and modern web application for streaming audioboo
 📦 Installation
 Clone the repository:
 
-bash
-Copy
-Edit
 git clone https://github.com/yourusername/RawyAudioBooks.git
+
+
 Navigate into the project directory:
-
-bash
-Copy
-Edit
 cd RawyAudioBooks
+
 Install dependencies:
-
-bash
-Copy
-Edit
 npm install
-Run the development server:
 
-bash
-Copy
-Edit
+Run the development server:
 npm run dev
+
 💻 Usage
 Open your browser and navigate to:
-
-arduino
-Copy
-Edit
 http://localhost:5173
+
 Explore the app, browse content, or try adding your own audiobook or podcast entries!
 
 🛠️ Built With
 React
-
 Vite
-
 Tailwind CSS
-
 JavaScript (ES6+)
 
 🤝 Contribution
