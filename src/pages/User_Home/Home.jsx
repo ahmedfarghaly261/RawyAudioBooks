@@ -92,6 +92,10 @@ function UserHome() {
             </section>
             {/* end sec3 */}
 
+            {/* sec5 */}
+            <section>
+                <For_U />
+            </section>
 
             {/* sec4 */}
             <section className="bg-[#f4eae4] mb-8 mt-8 w-[90%] lg:text-center mx-auto rounded-2xl">
@@ -154,10 +158,7 @@ function UserHome() {
             {/* end sec4 */}
 
 
-            {/* sec5 */}
-            <section>
-                <For_U />
-            </section>
+       
 
         
 

@@ -39,7 +39,8 @@ function Header() {
                             </li>
                             <li>
                                 <a href="#" className="text-gray-700 text-xl hover:bg-gray-100 px-3 py-2 rounded-md">
-                                    c o n t a c t   u s
+                                   <Link to={"/contact_us"}> c o n t a c t   u s</Link> 
+                                    
                                 </a>
                             </li>
                         </ul>

@@ -14,6 +14,7 @@ import AdminPage from './pages/admin/admin'
 import UserProfile from './pages/UserProfile/userProfile'
 import Categories from './pages/categories/categories'
 import For_U from './components/forU/for_U'
+import ContactUs from './pages/contact_us/contact_us'
 
 function App() {
   
@@ -32,6 +33,7 @@ function App() {
         <Route path="/UserPage" element={<UserProfile/>} />
         <Route path="/Categories" element={<Categories/>} />
         <Route path="/booksForU" element={<For_U/>} />
+        <Route path="/contact_us" element={<ContactUs/>} />
       </Routes>
       </BrowserRouter>
     </>
