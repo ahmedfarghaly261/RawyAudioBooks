@@ -269,7 +269,7 @@ const Sidebar = () => {
     return (
         <>
             {/* Toggle Button - Only on small screens */}
-            <div className="md:hidden p-4">
+            <div className="md:hidden py-6 absolute  ">
                 <button
                     onClick={toggleSidebar}
                     className="px-4 py-2 text-2xl  text-black rounded-md"

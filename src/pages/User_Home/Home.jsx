@@ -1,5 +1,6 @@
 import CardList from "../../components/card/card";
 import Footer from "../../components/footer/footer";
+import For_U from "../../components/forU/for_U";
 import Header from "../../components/header/header";
 import p1 from "../../images/Picture.png"
 import p2 from "../../images/Picture2.png"
@@ -152,6 +153,13 @@ function UserHome() {
             </section>
             {/* end sec4 */}
 
+
+            {/* sec5 */}
+            <section>
+                <For_U />
+            </section>
+
+        
 
             {/* footer */}
             <Footer />

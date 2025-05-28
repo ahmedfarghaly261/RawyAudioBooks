@@ -13,6 +13,7 @@ import BookPage from './pages/bookPage/Bookpage'
 import AdminPage from './pages/admin/admin'
 import UserProfile from './pages/UserProfile/userProfile'
 import Categories from './pages/categories/categories'
+import For_U from './components/forU/for_U'
 
 function App() {
   
@@ -30,6 +31,7 @@ function App() {
         <Route path="/AdminPage" element={<AdminPage/>} />
         <Route path="/UserPage" element={<UserProfile/>} />
         <Route path="/Categories" element={<Categories/>} />
+        <Route path="/booksForU" element={<For_U/>} />
       </Routes>
       </BrowserRouter>
     </>
