@@ -6,6 +6,9 @@ import { GrFavorite } from "react-icons/gr";
 // import { GrFavorite } from "react-icons/gr";
 import { MdOutlineKeyboardVoice } from "react-icons/md";
 import { CiLogout } from "react-icons/ci";
+import { FaListUl } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+
 
 const UserSidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,13 +16,17 @@ const UserSidebar = () => {
     return (
         <>
             {/* Toggle button for small screens */}
-            <button
-                onClick={() => setIsOpen(true)}
-                className="fixed top-4 left-4 z-50 p-2 rounded-md bg-gray-100 text-gray-800 shadow-md lg:hidden"
-            >
-                ☰
-            </button>
+           
+                <button
+                    onClick={() => setIsOpen(true)}
+                    className="fixed top-4 left-4 z-50 p-2 rounded-md text-2xl text-gray-800 lg:hidden "
+                >
+                    <FaListUl />
+                </button>
+               
+            
 
+<Link to={""}></Link>
             {/* Overlay on mobile when sidebar is open */}
             {isOpen && (
                 <div
@@ -55,10 +62,14 @@ const UserSidebar = () => {
                                     </summary>
                                     <ul className="mt-2 space-y-1 px-4 ">
                                         <li>
-                                            <a href="#" className=" block rounded-lg px-4 py-2  font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"> H o m e </a>
+                                            <Link to={"/"}> 
+                                            <a href="#" className=" block rounded-lg px-4 py-2  font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                                H o m e
+                                                 </a></Link> 
                                         </li>
                                         <li>
-                                            <a href="#" className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">c a t e g o r i e s</a>
+                                            <Link to={"/Categories"}> <a href="#" className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">c a t e g o r i e s</a>
+                                            </Link>
                                         </li>
                                         <li>
                                             <a href="#" className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">w r i t e r s</a>
@@ -124,8 +135,8 @@ const UserSidebar = () => {
                                     href="#"
                                     className="flex items-center gap-2 rounded-lg px-4 py-2 font-medium text-lg text-red-600 hover:bg-gray-100 hover:text-red-600"
                                 >
-                                    <CiLogout  className="text-lg" />
-                                    My Ebooks
+                                    <CiLogout className="text-lg" />
+                                    Logout
                                 </a>
                             </li>
                         </ul>

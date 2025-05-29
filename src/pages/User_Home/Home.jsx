@@ -92,12 +92,14 @@ function UserHome() {
             </section>
             {/* end sec3 */}
 
-            {/* sec5 */}
+            {/* sec4 */}
             <section>
                 <For_U />
             </section>
+            {/* end sec5 */}
 
-            {/* sec4 */}
+
+            {/* sec5 */}
             <section className="bg-[#f4eae4] mb-8 mt-8 w-[90%] lg:text-center mx-auto rounded-2xl">
                 <div className="container px-6 py-10 mx-auto">
                     <div className="text-center">
@@ -155,12 +157,8 @@ function UserHome() {
                     </div>
                 </div>
             </section>
-            {/* end sec4 */}
+            {/* end sec5 */}
 
-
-       
-
-        
 
             {/* footer */}
             <Footer />

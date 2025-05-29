@@ -1,6 +1,7 @@
 import React from 'react';
 import UserSidebar from '../../components/userSidebar/userSidebar';
 import Header from '../../components/header/header';
+import UserInfo from '../../components/userInfo/userinfo';
 
 
 const UserProfile = () => {
@@ -13,7 +14,7 @@ const UserProfile = () => {
                     <UserSidebar/>
                 </aside>
                 <div className="d">
-                    aslf
+                    <UserInfo/>
                 </div>
 
             </main>
