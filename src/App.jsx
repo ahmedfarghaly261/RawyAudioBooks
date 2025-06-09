@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Route, Router,Routes } from 'react-router-dom'
+import { UserProvider } from './context/UserContext'
 import Header from './components/header/header'
 import Footer from './components/footer/footer'
 import UserHome from './pages/User_Home/Home'
@@ -20,6 +21,7 @@ function App() {
   
   return (
     <>
+      <UserProvider>
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<UserHome />} />
@@ -36,6 +38,7 @@ function App() {
         <Route path="/contact_us" element={<ContactUs/>} />
       </Routes>
       </BrowserRouter>
+      </UserProvider>
     </>
   )
 }

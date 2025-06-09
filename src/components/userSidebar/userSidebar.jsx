@@ -1,17 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FaRegUser } from "react-icons/fa";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { MdOutlineBook } from "react-icons/md";
 import { GrFavorite } from "react-icons/gr";
-// import { GrFavorite } from "react-icons/gr";
 import { MdOutlineKeyboardVoice } from "react-icons/md";
 import { CiLogout } from "react-icons/ci";
 import { FaListUl } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
+import { UserContext } from '../../context/UserContext';
 
 const UserSidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { logout } = useContext(UserContext);
+    const navigate = useNavigate();
+    const handleLogout = () => {
+        logout();
+        alert('Logged out');
+        navigate('/');
+    };
 
     return (
         <>
@@ -134,6 +140,7 @@ const UserSidebar = () => {
                                 <a
                                     href="#"
                                     className="flex items-center gap-2 rounded-lg px-4 py-2 font-medium text-lg text-red-600 hover:bg-gray-100 hover:text-red-600"
+                                    onClick={handleLogout}
                                 >
                                     <CiLogout className="text-lg" />
                                     Logout
